@@ -18,7 +18,7 @@
 
   > ul {
     > li {
-      
+      margin-left: 20px;
     }
   }
 
@@ -51,4 +51,6 @@
   color: $lightest-gray
 }
 
-    
+.fa-solid.fa-gear::before {
+  font-size: 40px
+}
