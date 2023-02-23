@@ -9,23 +9,23 @@ span, article, footer, time, small {
   // padding:
   // border:
   // outline:
-  // font:
-  // color:
+   font: inherit;
+   color: inherit;
   // text-align:
-  // text-decoration:
+   text-decoration: inherit;
   // vertical-align:
-  // box-sizing:
+   box-sizing: inherit;
   // background:
 }
 
 ol, ul {
-  // list-style:
+list-style: none;
 }
 
 img {
-  // display:
-  // width:
-  // height:
+  display: block;
+  width: inherit;
+  height: auto;
 }
 
 input[type="password"],
@@ -38,6 +38,7 @@ button {
   Get rid of native styling. Read more here:
   http://css-tricks.com/almanac/properties/a/appearance/
   */
+  
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -45,10 +46,14 @@ button {
 
 button,
 input[type="submit"] {
-  // cursor:
+  cursor: pointer;
 }
 
-/* Clearfix */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 .group:after {
   // ...
